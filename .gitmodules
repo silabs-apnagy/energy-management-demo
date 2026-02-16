@@ -1,0 +1,12 @@
+[submodule "components/homeassistant"]
+	path = components/homeassistant
+	url = git@github.com:silabs-apnagy/emdemo-homeassistant.git
+[submodule "components/evse-app"]
+	path = components/evse-app
+	url = git@github.com:silabs-apnagy/emdemo-evse-app.git
+[submodule "components/solar-app"]
+	path = components/solar-app
+	url = git@github.com:silabs-apnagy/emdemo-solar-app.git
+[submodule "components/e-meter-app"]
+	path = components/e-meter-app
+	url = git@github.com:silabs-apnagy/emdemo-e-meter-app.git
