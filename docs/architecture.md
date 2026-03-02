@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This repository contains a customer-facing Energy Management demo built on Matter/CHIP concepts. It showcases how multiple simulated energy devices can coordinate (locally) using **Matter over Thread**, while **Home Assistant** provides visualization and automation.
+This repository contains a customer-facing Energy Management demo built on Matter/CHIP concepts. It showcases how multiple simulated energy devices can coordinate using Matter over Thread, while Home Assistant provides visualization and automation.
 
-The demo is intentionally “grid-less”: all “grid” and “device” behaviors are simulated (solar production, tariff/price, EV behavior), but exposed through real Matter endpoints and clusters so the interactions are realistic.
+The demo is intentionally “grid-less”: all grid and device behaviors are simulated, but exposed through real Matter endpoints and clusters so the interactions are realistic.
 
 ---
 
@@ -36,7 +36,7 @@ The demo is intentionally “grid-less”: all “grid” and “device” behav
 
 ---
 
-## Architecture diagram (Mermaid)
+## Architecture diagram
 
 ```mermaid
 flowchart LR
@@ -61,3 +61,4 @@ flowchart LR
   AUTO -->|"Matter command\nEnable/Disable charge"| EVSE
   SOLAR -->|"Telemetry"| UI
   TARIFF -->|"Telemetry"| UI
+
