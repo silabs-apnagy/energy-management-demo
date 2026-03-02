@@ -61,3 +61,5 @@ flowchart LR
   AUTO -->|"Matter command<br>Enable/Disable charge"| EVSE
   SOLAR -->|"Telemetry"| UI
   TARIFF -->|"Telemetry"| UI
+  EVSE -->|"Telemetry"| UI
+
