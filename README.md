@@ -7,6 +7,24 @@ This repo collects all components of the Energy Management Demo via git submodul
 - Solar Matter app
 - E-meter / Tariff Matter app
 
+- ## Documentation
+
+High-level documentation for the full demo:
+
+- 🏗 **Architecture Overview**  
+  `docs/architecture.md`  
+
+- 🚀 **Onboarding Guide**  
+  `docs/onboarding.md`  
+  → Step-by-step setup instructions for:
+    - Home Assistant OS + OTBR
+    - Flashing and commissioning Matter devices
+    - Applying dashboard and automation configuration
+
+For detailed implementation information, refer to the README inside each component submodule.
+
+---
+
 ## Clone
 ```bash
 git clone --recurse-submodules git@github.com:silabs-apnagy/energy-management-demo.git
