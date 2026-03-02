@@ -43,8 +43,8 @@ You will flash three Matter-over-Thread devices:
 Each app has its own README with build + flash instructions:
 
 - EVSE app: `components/evse-app/README.md`
-- Solar app: `apps/solar-app/README.md`
-- E-Meter app: `apps/e-meter-app/README.md`
+- Solar app: `components/solar-app/README.md`
+- E-Meter app: `components/e-meter-app/README.md`
 
 ---
 ## Step 2 — Set up Home Assistant OS on Raspberry Pi 5
@@ -153,3 +153,4 @@ Reference logic example:
 - Solar app README: `components/solar-app/README.md`
 - E-Meter app README: `components/e-meter-app/README.md`
 - Home Assistant integration pack README: `components/homeassistant/README.md`
+
