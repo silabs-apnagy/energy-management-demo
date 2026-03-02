@@ -41,15 +41,15 @@ The demo is intentionally “grid-less”: all grid and device behaviors are sim
 ```mermaid
 flowchart LR
   subgraph ThreadNetwork["Thread Network (Matter over Thread)"]
-    EVSE["EVSE Node\n(evse-app + demo extensions)\nSimulated EV model"]
-    SOLAR["Solar Panel Node\n(simulated generation)"]
-    TARIFF["E-Meter / Tariff Node\n(commodity price simulation)"]
+    EVSE["EVSE Node<br>(evse-app + demo extensions)<br>Simulated EV model"]
+    SOLAR["Solar Panel Node<br>(simulated generation)"]
+    TARIFF["E-Meter / Tariff Node<br>(commodity price simulation)"]
   end
 
   subgraph HA["Home Assistant OS (Raspberry Pi 5)"]
-    OTBR["OTBR (Border Router)\n+ Matter integration"]
-    UI["Home Assistant UI\nDashboard + History"]
-    AUTO["Home Assistant Automations\n(price + solar => EVSE enable)"]
+    OTBR["OTBR (Border Router)<br>+ Matter integration"]
+    UI["Home Assistant UI<br>Dashboard + History"]
+    AUTO["Home Assistant Automations<br>(price + solar => EVSE enable)"]
   end
 
   EVSE <-- "Matter (Thread)" --> OTBR
@@ -58,7 +58,6 @@ flowchart LR
 
   OTBR --> UI
   UI --> AUTO
-  AUTO -->|"Matter command\nEnable/Disable charge"| EVSE
+  AUTO -->|"Matter command<br>Enable/Disable charge"| EVSE
   SOLAR -->|"Telemetry"| UI
   TARIFF -->|"Telemetry"| UI
-
