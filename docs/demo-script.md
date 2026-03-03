@@ -38,7 +38,7 @@ Cycles the LCD screens:
 - **Solar Panel**: `ChangeWeather`
   - Cycles: **Clear (~3.5 kW)** → **Cloudy (~1 kW)** → **Night (0 kW)**
 - **E-Meter**: `ChangePrice`
-  - Cycles CommodityPrice: **133 → 399 → 765 ct/kWh**
+  - Cycles CommodityPrice: **113 → 399 → 765 ct/kWh**
 
 ---
 
@@ -106,7 +106,7 @@ Start from:
 ### 4) Show price-sensitive charging under moderate solar (Cloudy + low price)
 **Action:**
 - Set Solar to **Cloudy (~1 kW)** with **Solar BT1**
-- Set Price to **399** (or **133**) with **E-meter BT1**
+- Set Price to **399** (or **113**) with **E-meter BT1**
 
 **Expected:**
 - Solar is between **0.5 kW and 3 kW**
@@ -175,6 +175,6 @@ Start from:
 | Scenario | Solar | Price | Enable Charge | EVSE Charging |
 |---|---:|---:|---:|---:|
 | Bad conditions | Night (0 kW) | 765 | OFF | No |
-| Moderate solar + low price | Cloudy (~1 kW) | 133/399 | ON | Yes |
+| Moderate solar + low price | Cloudy (~1 kW) | 113/399 | ON | Yes |
 | Moderate solar + high price | Cloudy (~1 kW) | 765 | OFF | No |
 | High solar (overrides price) | Clear (~3.5 kW) | 765 | ON | Yes |
